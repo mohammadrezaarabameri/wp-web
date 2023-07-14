@@ -1,0 +1,318 @@
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 100;
+	src: url('assets/fonts/woff2/KalamehWeb-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/woff/KalamehWeb-Thin.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 200;
+	src: url('assets/fonts/woff2/KalamehWeb-ExtraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/woff/KalamehWeb-ExtraLight.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 300;
+	src: url('assets/fonts/woff2/KalamehWeb-Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/woff/KalamehWeb-Light.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 500;
+	src: url('assets/fonts/woff2/KalamehWeb-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/woff/KalamehWeb-Medium.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 600;
+	src: url('assets/fonts/woff2/KalamehWeb-Semibold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/woff/KalamehWeb-Semibold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 800;
+	src: url('assets/fonts/woff2/KalamehWeb-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/woff/KalamehWeb-ExtraBold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 900;
+	src: url('assets/fonts/woff2/KalamehWeb-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/woff/KalamehWeb-Black.woff') format('woff')  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: bold;
+	src: url('assets/fonts/woff2/KalamehWeb-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/woff/KalamehWeb-Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: normal;
+	src: url('assets/fonts/woff2/KalamehWeb-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('assets/fonts/woff/KalamehWeb-Regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+body {
+	font-family: KalamehWeb !important;
+	direction: rtl;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: KalamehWeb !important;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #aaa;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    width: 1230px;
+    box-shadow: 0 0 15px #cdcdcd;
+    height: 80px;
+    border-radius: 50px;
+    /* برای وسطچین قرار گرفتن هدر */
+    display: block;
+    margin: 20px auto;
+    /* برای وسطچین قرار گرفتن هدر */
+    /* برای وسطچین قرار گرفتن سرچ */
+    position: relative;
+}
+.btnsearch{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #8e17d1;
+    background-image: url(assets/img/icons8-search.svg);
+    background-color: #b333ef;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+     /* برای وسطچین قرار گرفتن سرچ */
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    /* برای وسطچین قرار گرفتن سرچ */
+
+}
+.basket{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(22, 193, 14, 35%)    ;
+    background-image: url(assets/img/icons8-shopping-bag-50.png);
+    border: 1px solid #16c10e;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 75px;
+    transform: translateY(-50%);
+}
+.register{
+    width: 150px;
+    height: 45px;
+    display: inline-block; /* برای اینکه کل بلاک رو نگیره  */
+    position: absolute;
+    top: 50%;
+    left: 140px;
+    transform: translateY(-50%);
+    background: linear-gradient(45deg, #05baff, #0574ff);
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    line-height: 45px; /* همان مقدار height رو میگیره که متن بیاد وسط */
+    font-family: KalamehWeb;
+    box-shadow: 0 0 10px rgba(5, 116, 255, 35%);
+}
+.main-menu{
+   float: right; /* منو بره سمت راست هدر */
+   /* position: absolute;
+   top: 50%; زیر منوها برای اینکه وسط قرار بگیرن باید پدرشون که منو های اصلی هست پوزیشن ریلیتیو بگیره و خودشون ابسولوت 
+   right: 200px; اما در اینجا پدرشون که منوهای اصلی هستن برای اینکه وسط چین بشن از کلاس ابسولوت استفاده کردن 
+   transform: translateY(-50%); پس میایم به روش دیگه منوهای اصلی رو وسط چین یم کنیم*/
+   margin: 20px 180px 20px 0px;
+}
+.main-menu > ul > li{
+    float: right; /* زیر منو کنار هم قرار میگیرن */
+    margin-left: 20px;
+    position: relative;
+ }
+ .main-menu ul li a{
+    color: #716060;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+ }
+ .main-menu ul li a:hover{
+    background: linear-gradient(45deg, #05baff, #0574ff);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(5, 116, 255, 35%);
+ }
+ .main-menu ul li ul {
+    width: 240px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #d4d4d4;
+    position: absolute;
+    visibility: hidden;
+ }
+ .main-menu ul li:hover > ul{
+    visibility: visible;
+ }
+ .main-menu ul li ul li{
+    position: relative;
+ }
+ .main-menu ul li ul li ul{
+    /* سمت راست قرار گرفتن زیر منوها */
+    top: 0;
+    right: 100%;
+    /* سمت راست قرار گرفتن زیر منوها */
+    position: absolute; /* سمت راست قرار گرفتن نسبت به پدرش */
+ }
+ .main-menu ul li ul li a {
+    font-size: 15px;
+    line-height: 25px;
+    border-bottom: 1px solid #efefef;
+    border-radius: 0px !important;
+ }
+ .logo img{
+    margin-right: 20px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+ }
+ .wp-center{
+    width: 1230px;
+    display: block;
+    margin: 0 auto;
+ }
+ .left-banner{
+    width: 295px;
+    height: 300px;
+    float: left;
+    border-radius: 8px;
+ }
+ .left-banner img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+ }
+ .home-banner{
+    width: 915px;
+    height: 300px;
+    margin-left: 20px;
+    float: right;
+    border-radius: 8px;
+ }
+ .home-banner img{
+    width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+ }
+ .clear{
+   width: 100%;
+   height: 1px;
+   float: none; /* چون المان های بالایی فلوت رایت یا لفت گرفتن باعث میشه المان پایینی هم این فلوت رو بگیرن و تداخل ایجاد بشه برای همین قبلش باید فلوت را پاک کرد */
+   clear: both; /* کلیر بوث یعنی فلوت رو از هر دو طرف چپ و راست پاک کن */
+ }
+ /* روش اول */
+ /* .banner-container{
+   display: flex;
+ }
+ .banner-item{
+   display: block;
+   margin: 0 auto;
+ }
+ .banner-item img{
+   width: 293px;
+   height: auto;
+   margin: 20px 0px 20px 20px;
+   border-radius: 8px;
+ } */
+ /*  */
+ /* روش دوم */
+ .banner-container{
+   margin-top: 20px;
+ }
+ .banner-item{
+   width: calc(25% - 15px);
+   float: right;
+   margin-left: 20px;
+ }
+ .banner-item:last-child{
+   margin-left: 0px;
+ }
+ .banner-item img{
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+ }
