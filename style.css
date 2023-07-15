@@ -66,6 +66,7 @@ body {
 	font-family: KalamehWeb !important;
 	direction: rtl;
 	margin: 0;
+   background-color:#f4f4f4 ;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -139,6 +140,7 @@ header{
     /* برای وسطچین قرار گرفتن هدر */
     /* برای وسطچین قرار گرفتن سرچ */
     position: relative;
+    background-color: #fff;
 }
 .btnsearch{
     width: 50px;
@@ -223,6 +225,7 @@ header{
     box-shadow: 0 0 15px #d4d4d4;
     position: absolute;
     visibility: hidden;
+    z-index: 99; /* برای اینکه اولویت بیشتری بگیره و زیر منو نره زیر اسلایدره */
  }
  .main-menu ul li:hover > ul{
     visibility: visible;
@@ -316,3 +319,136 @@ header{
    height: auto;
    border-radius: 8px;
  }
+ .suggest-product{
+   float: left;
+   width: 293px;
+   height: 400px;
+   box-shadow: 0 0 15px #d4d4d4;
+   border-radius: 8px;
+   margin-top: 20px;
+   background-color: #fff;
+ }
+ .discount-box{
+   float: right;
+   width: 915px;
+   height: 300px;
+   box-shadow: 0 0 15px #d4d4d4;
+   border-radius: 8px;
+   margin-top: 20px;
+   background-color: #fff;
+ }
+ .discount-box img{
+   width: 250px;
+   height: 250px;
+   padding: 20px;
+   margin: -23px 0px 0px 0px;
+}
+ .sale-percent{
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   box-shadow: 0 0 15px rgba(255, 31, 39, 35%);
+   background-image:  linear-gradient(45deg, #ff5757, #ff0f1a);
+   color: #fff;
+   padding: 6px;
+   float: right; /* برای اینکه بره بالا سمت راست قرار بگیره چون پدرش هم فلوتش رایت هست */
+   line-height: 40px; /* برای اینکه قیمت در وسط دایره قرار بگیره */
+   margin: 10px 20px -10px -25px;
+   z-index: 999;
+   position: relative;
+ }
+ .discount-coulmn{
+   float: right;
+   width: calc(33% - 6px);
+   height: auto;
+ }
+ .regular-price{
+   background: #dcdcdc;
+   border-radius: 25px;
+   padding: 2px 10px 2px 30px;
+   margin-left: -27px;
+}
+ .product-prices{
+   margin-top: 25px;
+ }
+ .sale-price{
+   background: #ff5757;
+   color: #fff;
+   border-radius: 25px;
+   padding: 2px 15px;
+   z-index: 999;
+   position: relative;
+ }
+ .discount-coulmn.content{
+   padding-right: 25px;
+ }
+ .discount-coulmn .discount-title{
+   margin-top: 40px;
+   font-weight: 700;
+   font-size: 18px;
+   color: #484747;
+ }
+ .short-desc{
+   margin-top: 11px;
+   color: #484747;
+   line-height: 2;
+ }
+ .discount-title.short{
+   margin-top: 25px;
+   font-weight: 700;
+   font-size: 15px;
+   color: #484747;
+ }
+ .suggest-time{
+   position: relative;
+ }
+ .suggest-item{
+   position: absolute;
+   top: 50%;
+   left: 140px;
+   margin-top: 156px;
+   transform: translateY(-50%);
+ }
+ .wonderfull-suggest{
+   font-size: 18px;
+   font-weight: 700;
+   color: #474444;
+   display: block;
+ }
+.until-time{
+   color: #474444;
+   line-height: 2;
+}
+.countdown{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 100%;
+   margin-top: 235px;
+   direction: ltr;
+   left: 55px;
+}
+.countdown div{
+   display: inline-block;
+}
+.countdown .no{
+   width: 50px;
+   height: 50px;
+   background-color: #cdcdcd;
+   border-radius: 15px;
+   display: block;
+   text-align: center;
+    line-height: 50px;
+    color: #474444;
+    margin-left: 5px;
+}
+.sec .no{
+   background-color: #ff5757;
+   color: #fff;
+}
+.countdown .txt{
+   margin: 7px auto;
+   display: block;
+   width: fit-content;
+   color: #474444;
+}
