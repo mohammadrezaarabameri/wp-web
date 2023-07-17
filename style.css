@@ -322,14 +322,13 @@ header{
  .suggest-product{
    float: left;
    width: 253px;
-   height: 400px;
+   height: 373px;
    box-shadow: 0 0 15px #d4d4d4;
    border-radius: 8px;
    margin-top: 20px;
    background-color: #fff;
    padding: 20px;
    position: relative;
-   margin-bottom: 100px;
  }
  .wp-suggest-title{
   font-size: 18px;
@@ -350,7 +349,7 @@ header{
   width: 250px;
   height: 190px;
   display: block;
-  margin: 20px auto;
+  margin: 17px auto;
  }
  .title-product{
   width: 80%;
@@ -364,7 +363,7 @@ header{
   color: #ff5757;
   font-size: 18px;
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
   text-align: center;
 }
 .add-to-cart{
@@ -547,4 +546,53 @@ header{
   background: #ff5757 !important ;
   color: #fff !important;
   width: 45px !important;
+}
+.wp-feature{
+  background: #ffffff;
+  width: 914px;
+  height: 100px;
+  float: right;
+  border-radius: 22px;
+  margin-top: 10px;
+  box-shadow: 0 0 15px #d3d3d3;
+}
+.wp-feature div{
+  display: flex;
+}
+.feature{
+  width: 16%;
+  text-align: center;
+  font-size: 12px;
+}
+.feature img{
+  display: block;
+  margin: 5px auto;
+  width: 65px;
+  height: 65px;
+}
+.most-sells-title{
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.most-sells-title::after{
+  content: "";
+  display: inline-block;
+  width: 85%;
+  height: 3px;
+  background: #5d5b5b;
+  margin-right: 13px;
+}
+.most-sells-title::before{
+  content: "";
+  background: url(assets/img/icons8-logo-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: middle; /*چیدمان عمودی در یک المان تنظیم میکنه */
 }
