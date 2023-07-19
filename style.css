@@ -717,3 +717,55 @@ header{
     color: #fff;
     font-size: 13px;
 }
+.home-brand-title{
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.home-brand-title::after{
+  content: "";
+  display: inline-block;
+  width: 86%;
+  height: 3px;
+  background: #5d5b5b;
+  margin-right: 13px;
+}
+.home-brand-title::before{
+  content: "";
+  background: url(assets/img/icons8-logo-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: middle; /*چیدمان عمودی در یک المان تنظیم میکنه */
+}
+.home-brands{
+  width: 100%;
+  background: #fff;
+  border-radius: 100px;
+  box-shadow: 0 0 15px #d3d3d3;
+}
+.center-item{
+  display: flex;
+}
+.brand-item{
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  box-shadow: 0 0 15px #cdcdcd;
+  position: relative;
+  margin: 20px auto;
+}
+
+.brand-item img{
+  max-width: 74%;
+  max-height: 74%;
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  transform: translateY(-50%);
+}
