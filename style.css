@@ -347,7 +347,7 @@ header{
  }
  .suggest-product-img{
   width: 250px;
-  height: 190px;
+  height: 180px;
   display: block;
   margin: 17px auto;
  }
@@ -369,7 +369,7 @@ header{
 .add-to-cart{
   color: #ff5757;
   border: 1px solid;
-  padding: 10px 50px;
+  padding: 13px 50px;
   border-radius: 26px;
   box-shadow: 0 0 15px #ffd0d0;
   display: block;
@@ -377,11 +377,11 @@ header{
   position: relative;
 }
 .add-to-cart::after{
-  background: url(assets/img/icons8-add-shopping-cart-50.png), #ff5757;
+  background: url(assets/img/icons8-add-shopping-cart-25.png), #ff5757;
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   display: inline-block;
   position: absolute;
   border-radius: 100%;
@@ -531,7 +531,7 @@ header{
   top: 20% !important;
   direction: ltr;
 }
-.swiper-pagination-bullet{
+.swiper-pagination.discount .swiper-pagination-bullet{
   width: 40px !important;
   height: 18px !important;
   border-radius: 20px !important;
@@ -542,7 +542,7 @@ header{
   line-height: 18px !important;
   font-size: 15px !important;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination.discount .swiper-pagination-bullet-active{
   background: #ff5757 !important ;
   color: #fff !important;
   width: 45px !important;
@@ -705,7 +705,7 @@ header{
   height: 25px;
   content: "";
   display: inline-block;
-  background: #484747;
+  background: url(assets/img/icons8-clock-25.png);
   border-radius: 100%;
   vertical-align: text-bottom;
     margin-left: 5px;
@@ -768,4 +768,57 @@ header{
   top: 50%;
   left: 13%;
   transform: translateY(-50%);
+}
+footer{
+  margin-top: 20px;
+  width: 100%;
+  background: #333333;
+  padding-top: 20px;
+border-top: 7px solid #3c7ef7e0;
+}
+.feature-footer img{
+display: block;
+margin: 0 auto;
+border-radius: 25px;
+}
+.feature-culmn{
+  width: 25%;
+  float: right;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+.feature-culmn-title{
+  font-weight: bold;
+  color: #fff;
+  line-height: 4;
+  font-size: 20px;
+}
+.feature-culmn p{
+  color: #fff;
+  line-height: 2;
+  font-size: 17px;
+}
+.feature-culmn ul li a{
+  color: #fff;
+  line-height: 2;
+  font-size: 17px;
+}
+.feature-culmn img{
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.copyright-text{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.copyright-text p{
+  display: inline-block;
+  background: #fff;
+  color: #333333;
+  padding: 5px 20px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 17px #ffffff7a;
+  margin-top: 20px;
+  line-height: 2;
 }
