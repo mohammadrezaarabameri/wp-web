@@ -848,10 +848,13 @@ border-radius: 25px;
   padding-bottom: 15px;
 }
 .pages-content p{
-  line-height: 2;
+  line-height: 3;
   color: #9a9a9a;
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: justify;
+}
+.short-desc{
+  line-height: 2 !important;
 }
 aside{
   width: 300px;
@@ -927,6 +930,9 @@ aside img{
   margin-left: 40px;
   color: #9a9a9a;
 }
+.meta-info{
+  margin-top: 20px;
+}
 .comment::before{
   content: "";
   background: url(assets/img/icons8-comment-25.png);
@@ -956,4 +962,8 @@ aside img{
   height: 25px;
   vertical-align: bottom;
   margin-left: 5px;
+}
+.inner-content{
+  border-top: 2px solid #ececec;
+  margin-top: 15px;
 }
