@@ -1,3 +1,15 @@
+/*
+Theme Name: zibashoo
+Theme URI: https://zibashoo.ir
+Author: mohammadreza
+Author URI: https://zibashoo.ir
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: zibashoo
+*/
+
 @font-face {
 	font-family: KalamehWeb;
 	font-style: normal;
@@ -1026,6 +1038,21 @@ aside img{
   background: linear-gradient(45deg, #005ef6, #00aeff);
   color: #fff;
   padding: 12px 55px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #41bcff91;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 14px;
+}
+.price-product{
+  color: #ff5353;
+  margin: 12px auto;
+  display: block;
+}
+.add-to-cart-category{
+  background: linear-gradient(45deg, #005ef6, #00aeff);
+  color: #fff;
+  padding: 12px 45px;
   border-radius: 8px;
   box-shadow: 0 0 20px #41bcff91;
   font-weight: 700;
