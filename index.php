@@ -1,45 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <title>wp</title>
-  </head>
-  <body>
-    <header>
-      <a class="btnsearch" href="#"></a>
-      <a class="basket" href="#"></a>
-      <a class="register" href="#">ورود / ثبت نام</a>
-      <nav class="main-menu">
-        <ul>
-          <li><a href="#">صفحه اصلی</a></li>
-          <li>
-            <a href="#">فروشگاه</a>
-            <ul>
-              <li><a href="#">محصولات الکترونیکی</a></li>
-              <li><a href="#">انواع موبایل ها</a></li>
-              <li>
-                <a href="#">محصولات دیجیتالی</a>
-                <ul>
-                  <li><a href="#">محصولات الکترونیکی</a></li>
-                  <li><a href="#">انواع موبایل ها</a></li>
-                  <li><a href="#">محصولات دیجیتالی</a></li>
-                  <li><a href="#">پر بازدیدترین محصولات</a></li>
-                </ul>
-              </li>
-              <li><a href="#">پر بازدیدترین محصولات</a></li>
-            </ul>
-          </li>
-          <li><a href="#">وبلاگ</a></li>
-          <li><a href="#">تخفیف ها</a></li>
-          <li><a href="#">آموزش</a></li>
-          <li><a href="#">دباره ما</a></li>
-        </ul>
-      </nav>
-      <a class="logo" href="#"><img src="assets/img/icons8-logo-50.png" /></a>
-    </header>
+<?php get_header(); ?>
     <div class="wp-center">
       <div class="left-banner">
         <a href="#"
@@ -50,8 +9,24 @@
       <div class="home-banner">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="assets/img/Screenshot 2023-07-13 110455.jpg" />
+            <?php 
+            $args = array('post_type' => 'slider',
+            'posts_per_page' => 3
+);
+$the_query = new WP_Query($args);
+// The Loop
+if ( $the_query->have_posts() ) {
+while ( $the_query->have_posts() ) {
+  $the_query->the_post(); ?>
+              <div class="swiper-slide"><a href='<?php bloginfo("url"); ?>'><?php the_post_thumbnail(); ?></a></div>
+  <?php
+}
+} else {
+echo 'پستی برای نمایش وجود ندارد!';
+}
+/* Restore original Post Data */
+wp_reset_postdata();
+             ?>
             </div>
             <div class="swiper-slide">
               <img src="assets/img/Screenshot 2023-07-13 110455.jpg" />
@@ -438,77 +413,4 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="wp-center">
-        <div class="feature-footer">
-          <img src="assets/img/Screenshot 2023-07-22 101414.jpg">
-        </div>
-        <div class="feature-culmn">
-          <h4 class="feature-culmn-title">راه های ارتباطی</h4>
-          <p>درباره ما<br/>
-          ایمیل: info@wp.com <br/>
-        آدرس: تهران - میدان انقلاب </p>
-        </div>
-        <div class="feature-culmn">
-          <h4 class="feature-culmn-title">دسترسی سریع</h4>
-         <ul>
-          <li><a href="#">درباره ما</a></li>
-          <li><a href="#">تماس با ما</a></li>
-          <li><a href="#">روش های پرداخت</a></li>
-          <li><a href="#">سوالات متداول</a></li>
-         </ul>
-        </div>
-        <div class="feature-culmn">
-          <h4 class="feature-culmn-title">مجوز ها</h4>
-          <a href="#"><img src="assets/img/Screenshot 2023-07-22 105334.jpg"></a>
-          <a href="#"><img src="assets/img/Screenshot 2023-07-22 105334.jpg"></a>
-        </div>
-        <div class="copyright-text">
-          <p>استفاده از مطالب سایت فروشگاهی وردپرس برای مقاصد غیر تجاری با ذکر منبع بلامانع می باشد.</p>
-        </div>
-      </div>
-    </footer>
-  </body>
-  <script src="assets/js/swiper-bundle.min.js" type="text-javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      loop: true,
-      autoplay: {
-        delay: 3000,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-      },
-    });
-  </script>
-  <script>
-    var menu = ["10%", "20%", "30%"];
-    var swiper = new Swiper(".discount-slider", {
-      direction: "vertical",
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + menu[index] + "</span>";
-        },
-      },
-      loop: true,
-      autoplay: {
-        delay: 3000,
-      },
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".brand-slider", {
-      loop: true,
-    });
-  </script>
-</html>
+  <?php get_footer(); ?>
