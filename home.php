@@ -2,7 +2,7 @@
     <div class="wp-center">
       <div class="left-banner">
         <a href="#"
-          ><img src="assets/img/Screenshot 2023-07-13 110332.jpg"
+          ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-13 110332.jpg"
         /></a>
       </div>
       <!-- start slider -->
@@ -27,15 +27,6 @@ echo 'پستی برای نمایش وجود ندارد!';
 /* Restore original Post Data */
 wp_reset_postdata();
              ?>
-            <div class="swiper-slide">
-              <img src="assets/img/Screenshot 2023-07-13 110455.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/Screenshot 2023-07-13 110455.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/Screenshot 2023-07-13 110455.jpg" />
-            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -47,22 +38,22 @@ wp_reset_postdata();
       <div class="banner-container">
         <div class="banner-item">
           <a href="#"
-            ><img src="assets/img/Screenshot 2023-07-14 113538.jpg"
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-14 113538.jpg"
           /></a>
         </div>
         <div class="banner-item">
           <a href="#"
-            ><img src="assets/img/Screenshot 2023-07-13 110332.jpg"
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-13 110332.jpg"
           /></a>
         </div>
         <div class="banner-item">
           <a href="#"
-            ><img src="assets/img/Screenshot 2023-07-14 113604.jpg"
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-14 113604.jpg"
           /></a>
         </div>
         <div class="banner-item">
           <a href="#"
-            ><img src="assets/img/Screenshot 2023-07-14 113648.jpg"
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-14 113648.jpg"
           /></a>
         </div>
       </div>
@@ -71,7 +62,7 @@ wp_reset_postdata();
         <a href="#"
           ><img
             class="suggest-product-img"
-            src="assets/img/Screenshot 2023-07-16 122723.jpg"
+            src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-16 122723.jpg"
         /></a>
         <a href="#"
           ><h3 class="title-product">
@@ -86,7 +77,7 @@ wp_reset_postdata();
           <div class="swiper-slide">
             <div class="discount-coulmn">
               <span class="sale-percent">20%</span>
-              <img src="assets/img/Screenshot 2023-07-15 102948.jpg" />
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-15 102948.jpg" />
             </div>
             <div class="discount-coulmn content">
               <div class="product-prices">
@@ -131,7 +122,7 @@ wp_reset_postdata();
           <div class="swiper-slide">
             <div class="discount-coulmn">
               <span class="sale-percent">20%</span>
-              <img src="assets/img/Screenshot 2023-07-15 102948.jpg" />
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-15 102948.jpg" />
             </div>
             <div class="discount-coulmn content">
               <div class="product-prices">
@@ -176,7 +167,7 @@ wp_reset_postdata();
           <div class="swiper-slide">
             <div class="discount-coulmn">
               <span class="sale-percent">20%</span>
-              <img src="assets/img/Screenshot 2023-07-15 102948.jpg" />
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-15 102948.jpg" />
             </div>
             <div class="discount-coulmn content">
               <div class="product-prices">
@@ -224,27 +215,27 @@ wp_reset_postdata();
       <div class="wp-feature">
         <div>
           <span class="feature"
-            ><img src="assets/img/Screenshot 2023-07-17 105951.jpg" />امکان
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-17 105951.jpg" />امکان
             تحویل اکسپرس</span
           >
           <span class="feature"
-            ><img src="assets/img/Screenshot 2023-07-17 110012.jpg" />امکان
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-17 110012.jpg" />امکان
             پرداخت در محل</span
           >
           <span class="feature"
-            ><img src="assets/img/Screenshot 2023-07-17 110031.jpg" />7 روز
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-17 110031.jpg" />7 روز
             هفته، 24 ساعته</span
           >
           <span class="feature"
-            ><img src="assets/img/Screenshot 2023-07-17 110052.jpg" />هفت روز
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-17 110052.jpg" />هفت روز
             ضمانت بازگشت وجه</span
           >
           <span class="feature"
-            ><img src="assets/img/Screenshot 2023-07-17 110113.jpg" /> ضمانت اصل
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-17 110113.jpg" /> ضمانت اصل
             بودن کالا</span
           >
           <span class="feature"
-            ><img src="assets/img/Screenshot 2023-07-17 110012.jpg" />ارسال به
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-17 110012.jpg" />ارسال به
             تمام نقاط کشور</span
           >
         </div>
@@ -255,35 +246,35 @@ wp_reset_postdata();
       <div class="inner-product-item">
         <div class="product-item">
           <a href="#"
-            ><img src="assets/img/Screenshot 2023-07-18 104712.jpg"
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-18 104712.jpg"
           /></a>
           <a href="#"><h3>لپ تاپ 15.6 اینچی ایسوس</h3></a>
           <span>32.050.000</span>
         </div>
         <div class="product-item">
           <a href="#"
-            ><img src="assets/img/Screenshot 2023-07-18 104712.jpg"
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-18 104712.jpg"
           /></a>
           <a href="#"><h3>لپ تاپ 15.6 اینچی ایسوس</h3></a>
           <span>32.050.000</span>
         </div>
         <div class="product-item">
           <a href="#"
-            ><img src="assets/img/Screenshot 2023-07-18 104712.jpg"
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-18 104712.jpg"
           /></a>
           <a href="#"><h3>لپ تاپ 15.6 اینچی ایسوس</h3></a>
           <span>32.050.000</span>
         </div>
         <div class="product-item">
           <a href="#"
-            ><img src="assets/img/Screenshot 2023-07-18 104712.jpg"
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-18 104712.jpg"
           /></a>
           <a href="#"><h3>لپ تاپ 15.6 اینچی ایسوس</h3></a>
           <span>32.050.000</span>
         </div>
         <div class="product-item">
           <a href="#"
-            ><img src="assets/img/Screenshot 2023-07-18 104712.jpg"
+            ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-18 104712.jpg"
           /></a>
           <a href="#"><h3>لپ تاپ 15.6 اینچی ایسوس</h3></a>
           <span>32.050.000</span>
@@ -291,75 +282,40 @@ wp_reset_postdata();
       </div>
       <div class="home-middle-banner">
         <a class="adl-banner" href="#"
-          ><img src="assets/img/Screenshot 2023-07-18 113502.jpg"
+          ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-18 113502.jpg"
         /></a>
         <a class="adr-banner" href="#"
-          ><img src="assets/img/Screenshot 2023-07-18 113524.jpg"
+          ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-18 113524.jpg"
         /></a>
       </div>
       <div class="home-article">
         <h2 class="home-art-title">آخرین مقالات سایت</h2>
-        <div class="home-boxx-article">
+        <div class="home-box-article">
+        <?php 
+            $args = array('post_type' => 'post',
+            'posts_per_page' => 5
+);
+$the_query = new WP_Query($args);
+// The Loop
+if ( $the_query->have_posts() ) {
+while ( $the_query->have_posts() ) {
+  $the_query->the_post(); ?>
           <div class="article-item">
-            <a href="#"
-              ><img src="assets/img/Screenshot 2023-07-18 121945.jpg"
-            /></a>
-            <a href="#"
-              ><h3>
-                اپلیکیشن برتر برای محرک کردن عکس در اندروید 10 یا آیفون
-              </h3></a
-            >
-            <span class="publish-data">4 آبان 1400</span>
-            <a class="author">اسحاق شفایی</a>
+            <a href="<?php bloginfo('the_permalink'); ?>"
+              ><?php the_post_thumbnail(); ?></a>
+            <a href="<?php bloginfo('the_permalink'); ?>"
+              ><h3><?php the_title(); ?></h3></a>
+            <span class="publish-data"><?php echo get_the_date('j F Y'); ?></span>
+            <span class="author"><?php echo get_the_author_posts_link(); ?></span>
           </div>
-          <div class="article-item">
-            <a href="#"
-              ><img src="assets/img/Screenshot 2023-07-18 121945.jpg"
-            /></a>
-            <a href="#"
-              ><h3>
-                اپلیکیشن برتر برای محرک کردن عکس در اندروید 10 یا آیفون
-              </h3></a
-            >
-            <span class="publish-data">4 آبان 1400</span>
-            <a class="author">اسحاق شفایی</a>
-          </div>
-          <div class="article-item">
-            <a href="#"
-              ><img src="assets/img/Screenshot 2023-07-18 121945.jpg"
-            /></a>
-            <a href="#"
-              ><h3>
-                اپلیکیشن برتر برای محرک کردن عکس در اندروید 10 یا آیفون
-              </h3></a
-            >
-            <span class="publish-data">4 آبان 1400</span>
-            <a class="author">اسحاق شفایی</a>
-          </div>
-          <div class="article-item">
-            <a href="#"
-              ><img src="assets/img/Screenshot 2023-07-18 121945.jpg"
-            /></a>
-            <a href="#"
-              ><h3>
-                اپلیکیشن برتر برای محرک کردن عکس در اندروید 10 یا آیفون
-              </h3></a
-            >
-            <span class="publish-data">4 آبان 1400</span>
-            <a class="author">اسحاق شفایی</a>
-          </div>
-          <div class="article-item">
-            <a href="#"
-              ><img src="assets/img/Screenshot 2023-07-18 121945.jpg"
-            /></a>
-            <a href="#"
-              ><h3>
-                اپلیکیشن برتر برای محرک کردن عکس در اندروید 10 یا آیفون
-              </h3></a
-            >
-            <span class="publish-data">4 آبان 1400</span>
-            <a class="author">اسحاق شفایی</a>
-          </div>
+  <?php
+}
+} else {
+echo 'پستی برای نمایش وجود ندارد!';
+}
+/* Restore original Post Data */
+wp_reset_postdata();
+?>
         </div>
       </div>
       <h4 class="home-brand-title">برندهای ویژه</h4>
@@ -367,46 +323,27 @@ wp_reset_postdata();
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="center-item">
+            <?php 
+            $args = array('post_type' => 'brands',
+);
+$the_query = new WP_Query($args);
+// The Loop
+if ( $the_query->have_posts() ) {
+while ( $the_query->have_posts() ) {
+  $the_query->the_post(); ?>
               <div class="brand-item">
-                <a href="#"
-                  ><img src="assets/img/Screenshot 2023-07-19 105746.jpg"
-                /></a>
+                <a href="<?php the_permalink(); ?>"
+                  ><?php the_post_thumbnail(); ?></a>
               </div>
-              <div class="brand-item">
-                <a href="#"
-                  ><img src="assets/img/Screenshot 2023-07-19 105746.jpg"
-                /></a>
-              </div>
-              <div class="brand-item">
-                <a href="#"
-                  ><img src="assets/img/Screenshot 2023-07-19 105746.jpg"
-                /></a>
-              </div>
-              <div class="brand-item">
-                <a href="#"
-                  ><img src="assets/img/Screenshot 2023-07-19 105746.jpg"
-                /></a>
-              </div>
-              <div class="brand-item">
-                <a href="#"
-                  ><img src="assets/img/Screenshot 2023-07-19 105746.jpg"
-                /></a>
-              </div>
-              <div class="brand-item">
-                <a href="#"
-                  ><img src="assets/img/Screenshot 2023-07-19 105746.jpg"
-                /></a>
-              </div>
-              <div class="brand-item">
-                <a href="#"
-                  ><img src="assets/img/Screenshot 2023-07-19 105746.jpg"
-                /></a>
-              </div>
-              <div class="brand-item">
-                <a href="#"
-                  ><img src="assets/img/Screenshot 2023-07-19 105746.jpg"
-                /></a>
-              </div>
+  <?php
+}
+} else {
+echo 'پستی برای نمایش وجود ندارد!';
+}
+/* Restore original Post Data */
+wp_reset_postdata();
+?>
+
             </div>
           </div>
         </div>

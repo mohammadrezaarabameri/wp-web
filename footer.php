@@ -1,7 +1,7 @@
 <footer>
       <div class="wp-center">
         <div class="feature-footer">
-          <img src="assets/img/Screenshot 2023-07-22 101414.jpg">
+          <img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-22 101414.jpg">
         </div>
         <div class="feature-culmn">
           <h4 class="feature-culmn-title">راه های ارتباطی</h4>
@@ -20,8 +20,8 @@
         </div>
         <div class="feature-culmn">
           <h4 class="feature-culmn-title">مجوز ها</h4>
-          <a href="#"><img src="assets/img/Screenshot 2023-07-22 105334.jpg"></a>
-          <a href="#"><img src="assets/img/Screenshot 2023-07-22 105334.jpg"></a>
+          <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-22 105334.jpg"></a>
+          <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-22 105334.jpg"></a>
         </div>
         <div class="copyright-text">
           <p>استفاده از مطالب سایت فروشگاهی وردپرس برای مقاصد غیر تجاری با ذکر منبع بلامانع می باشد.</p>
