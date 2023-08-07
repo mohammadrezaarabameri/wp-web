@@ -70,6 +70,8 @@ function sidebarWidgetsFooter() {
 		'name'          => __( 'سایدبار', 'zibashoo' ),
 		'id'            => 'sidebar-widget',
 		'description'   => __( 'این ابزارک برای سایدبار قالب ایجاد شده است', 'zibashoo' ),
+        'before_widget' => '',
+		'after_widget'  => '',
 	) );
 }
 add_action( 'widgets_init', 'sidebarWidgetsFooter' );
@@ -85,10 +87,10 @@ class registerRecentPost extends WP_Widget {
 	function widget( $args, $instance ) {
         ?>
     <div class="sidebar-related-post">
-    <span class="last-post-title">آخرین نوشته ها</span>
+    <span class="last-post-title"><?php echo $instance['recenttitle']; ?></span>
     <?php 
             $args = array('post_type' => 'post',
-            'posts_per_page' => 4
+            'posts_per_page' =>  $instance['recentnumber']
 );
 $the_query = new WP_Query($args);
 // The Loop
@@ -112,12 +114,24 @@ wp_reset_postdata();
     }
 
 	function update( $new_instance, $old_instance ) {
-		return $new_instance;
+        $instance = $old_instance;
+        $instance['recenttitle'] = $new_instance['recenttitle'];
+        $instance['recentnumber'] = $new_instance['recentnumber'];
+        return $instance;
 	}
 
 	function form( $instance ) {
-		return '';
-	}
+        $title = $instance['recenttitle'];
+        $number = $instance['recentnumber'];
+        ?>
+        <label >عنوان</label>
+        <br/>
+        <input type='text' id='<?php echo $this->get_field_id('recenttitle'); ?>' name='<?php echo $this->get_field_name('recenttitle'); ?>' value='<?php echo $title ?>'>
+        <br/>
+        <label >تعداد</label>
+        <br/>
+        <input type='number' id='<?php echo $this->get_field_id('recentnumber'); ?>' name='<?php echo $this->get_field_name('recentnumber'); ?>' value='<?php echo $number ?>'>
+   <?php }
 }
 
 add_action( 'widgets_init', 'widgetRecentPost' );
