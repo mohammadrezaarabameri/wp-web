@@ -21,5 +21,5 @@
  )
  ); ?>
       </nav>
-      <a class="logo" href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/icons8-logo-50.png" /></a>
+      <a class="logo" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/icons8-logo-50.png" /></a>
     </header>

@@ -4,24 +4,19 @@
           <img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-22 101414.jpg">
         </div>
         <div class="feature-culmn">
-          <h4 class="feature-culmn-title">راه های ارتباطی</h4>
-          <p>درباره ما<br/>
-          ایمیل: info@wp.com <br/>
-        آدرس: تهران - میدان انقلاب </p>
+         <?php if(is_active_sidebar('footer-1')){
+                  dynamic_sidebar('footer-1');
+           } ?>
         </div>
         <div class="feature-culmn">
-          <h4 class="feature-culmn-title">دسترسی سریع</h4>
-         <ul>
-          <li><a href="#">درباره ما</a></li>
-          <li><a href="#">تماس با ما</a></li>
-          <li><a href="#">روش های پرداخت</a></li>
-          <li><a href="#">سوالات متداول</a></li>
-         </ul>
+        <?php if(is_active_sidebar('footer-2')){
+                  dynamic_sidebar('footer-2');
+           } ?>
         </div>
         <div class="feature-culmn">
-          <h4 class="feature-culmn-title">مجوز ها</h4>
-          <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-22 105334.jpg"></a>
-          <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-22 105334.jpg"></a>
+        <?php if(is_active_sidebar('footer-3')){
+                  dynamic_sidebar('footer-3');
+           } ?>
         </div>
         <div class="copyright-text">
           <p>استفاده از مطالب سایت فروشگاهی وردپرس برای مقاصد غیر تجاری با ذکر منبع بلامانع می باشد.</p>

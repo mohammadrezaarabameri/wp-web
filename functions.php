@@ -43,4 +43,87 @@ function myBrandPostType(){
 }
 add_action('init', 'myBrandPostType');
 
+// add sidebar footer
+function sidebarWidgetsFooter() {
+	register_sidebar( array(
+		'name'          => __( 'فوتر سایت 1', 'zibashoo' ),
+		'id'            => 'footer-1',
+		'description'   => __( 'در این بخش شما می توانید ابزارک های خودتون را در ستون اول فوتر ایجاد کنید', 'zibashoo' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'فوتر سایت 2', 'zibashoo' ),
+		'id'            => 'footer-2',
+		'description'   => __( 'در این بخش شما می توانید ابزارک های خودتون را در ستون دوم فوتر ایجاد کنید', 'zibashoo' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'فوتر سایت 3', 'zibashoo' ),
+		'id'            => 'footer-3',
+		'description'   => __( 'در این بخش شما می توانید ابزارک های خودتون را در ستون سوم فوتر ایجاد کنید', 'zibashoo' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'سایدبار', 'zibashoo' ),
+		'id'            => 'sidebar-widget',
+		'description'   => __( 'این ابزارک برای سایدبار قالب ایجاد شده است', 'zibashoo' ),
+	) );
+}
+add_action( 'widgets_init', 'sidebarWidgetsFooter' );
+
+//add register recent post widget
+class registerRecentPost extends WP_Widget {
+
+	function __construct() {
+		// Instantiate the parent object.
+		parent::__construct( false, __( 'آخرین نوشته ها', 'zibashoo' ) );
+	}
+
+	function widget( $args, $instance ) {
+        ?>
+    <div class="sidebar-related-post">
+    <span class="last-post-title">آخرین نوشته ها</span>
+    <?php 
+            $args = array('post_type' => 'post',
+            'posts_per_page' => 4
+);
+$the_query = new WP_Query($args);
+// The Loop
+if ( $the_query->have_posts() ) {
+while ( $the_query->have_posts() ) {
+  $the_query->the_post(); ?>
+  <div class='item-post'>
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+          <a href="<?php the_permalink(); ?>"><h3 class="title-post"><?php the_title(); ?></h3></a> 
+</div>
+           <?php
+}
+} else {
+echo 'پستی برای نمایش وجود ندارد!';
+}
+/* Restore original Post Data */
+wp_reset_postdata();
+             ?>
+    </div>
+        <?php
+    }
+
+	function update( $new_instance, $old_instance ) {
+		return $new_instance;
+	}
+
+	function form( $instance ) {
+		return '';
+	}
+}
+
+add_action( 'widgets_init', 'widgetRecentPost' );
+
+function widgetRecentPost() {
+	register_widget( 'registerRecentPost' );
+}
+
 ?>

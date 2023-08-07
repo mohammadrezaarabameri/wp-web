@@ -800,7 +800,7 @@ border-radius: 25px;
   margin-right: 100px;
   margin-top: 20px;
 }
-.feature-culmn-title{
+.feature-culmn h1,.feature-culmn h2, .feature-culmn h3, .feature-culmn h4,.feature-culmn h5,.feature-culmn h6{
   font-weight: bold;
   color: #fff;
   line-height: 4;
@@ -819,6 +819,9 @@ border-radius: 25px;
 .feature-culmn img{
   border-radius: 20px;
   margin-left: 10px;
+}
+.feature-culmn div.widget_media_image {
+  display: inline-block !important;
 }
 .copyright-text{
   width: 100%;
@@ -1059,4 +1062,30 @@ aside img{
   font-weight: 700;
   display: inline-block;
   font-size: 14px;
+}
+.breadcrumb a{
+  position: relative;
+  margin-left: 28px;
+  color: #8e8d8d;
+}
+.breadcrumb a::before{
+  content: "";
+  left: 0;
+  position: absolute;
+  border-top: 1em solid transparent;
+  border-right: 1.5em solid #d1d1d1;
+  border-bottom: 1em solid transparent;
+  margin-left: -25px;
+  margin-top: 5px;
+}
+.breadcrumb a::after{
+  content: "";
+  left: 1px;
+  position: absolute;
+  border-top: 1em solid transparent;
+  border-right: 1.5em solid #d1d1d1;
+  border-bottom: 1em solid transparent;
+  margin-left: -22px;
+  margin-top: 5px;
+  border-right-color: #fff ;
 }
