@@ -1,3 +1,5 @@
+</div>
+<div class="clear"></div>
 <footer>
       <div class="wp-center">
         <div class="feature-footer">

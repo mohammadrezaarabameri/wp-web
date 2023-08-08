@@ -937,6 +937,9 @@ aside img{
   margin: 20px 0 20px 20px;
   display: inline-block;
 }
+.category-post a{
+  color: #5aa3fd;
+}
 .post-title{
   font-size: 22px;
   font-weight: bold;
@@ -1020,6 +1023,7 @@ aside img{
 }
 .archive-item{
   width: calc(25% - 8px);
+  height: 330px;
   padding: 20px 0;
   border-radius: 8px;
   text-align: center;
@@ -1028,8 +1032,35 @@ aside img{
   float: right;
   margin: 0 6px 20px 2px;
 }
+.archive-content .navigation{
+  text-align: center;
+}
+.archive-content .navigation ul{
+  background: #fff;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 5px 6px;
+}
+.archive-content .navigation ul li{
+  display: inline-block;
+  margin: 0 3px;
+}
+.archive-content .navigation ul li a{
+  font-size: 18px;
+}
+.archive-content .navigation ul li.active a{
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  background: linear-gradient(45deg, #005ef6, #00aeff);
+  border-radius: 50px;
+  line-height: 1.5;
+  display: block;
+  box-shadow: 0 0 10px #41bcff91;
+}
 .archive-item img{
-  max-width: 100%;
+  max-width: 190px;
+  height: 200px;
 }
 .archive-title{
   color: #3f3d3d;

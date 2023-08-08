@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-    <div class="wp-center">
       <div class="left-banner">
         <a href="#"
           ><img src="<?php bloginfo('template_url'); ?>/assets/img/Screenshot 2023-07-13 110332.jpg"
@@ -301,9 +300,9 @@ if ( $the_query->have_posts() ) {
 while ( $the_query->have_posts() ) {
   $the_query->the_post(); ?>
           <div class="article-item">
-            <a href="<?php bloginfo('the_permalink'); ?>"
+            <a href="<?php the_permalink(); ?>"
               ><?php the_post_thumbnail(); ?></a>
-            <a href="<?php bloginfo('the_permalink'); ?>"
+            <a href="<?php the_permalink(); ?>"
               ><h3><?php the_title(); ?></h3></a>
             <span class="publish-data"><?php echo get_the_date('j F Y'); ?></span>
             <span class="author"><?php echo get_the_author_posts_link(); ?></span>
@@ -325,6 +324,7 @@ wp_reset_postdata();
             <div class="center-item">
             <?php 
             $args = array('post_type' => 'brands',
+            'posts_per_page' => 8
 );
 $the_query = new WP_Query($args);
 // The Loop
@@ -348,5 +348,4 @@ wp_reset_postdata();
           </div>
         </div>
       </div>
-    </div>
   <?php get_footer(); ?>

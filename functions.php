@@ -98,7 +98,7 @@ if ( $the_query->have_posts() ) {
 while ( $the_query->have_posts() ) {
   $the_query->the_post(); ?>
   <div class='item-post'>
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('recent-post'); ?></a>
           <a href="<?php the_permalink(); ?>"><h3 class="title-post"><?php the_title(); ?></h3></a> 
 </div>
            <?php
@@ -138,6 +138,78 @@ add_action( 'widgets_init', 'widgetRecentPost' );
 
 function widgetRecentPost() {
 	register_widget( 'registerRecentPost' );
+};
+//add image size for recent post
+add_image_size( 'recent-post', 60, 60, true );
+add_image_size( 'post-thumbnail' );
+add_image_size( 'archive-thumbnail', 190, 200, true );
+//dynumic title
+function dynumicTitle(){
+    add_theme_support('title-tag');
+}
+add_action('after_setup_theme', 'dynumicTitle');
+
+//pagination for archive
+
+function paginationArchive() {
+
+    if( is_singular() )
+        return;
+
+    global $wp_query;
+
+    /** Stop execution if there's only 1 page */
+    if( $wp_query->max_num_pages <= 1 )
+        return;
+
+    $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+    $max   = intval( $wp_query->max_num_pages );
+
+    /** Add current page to the array */
+    if ( $paged >= 1 )
+        $links[] = $paged;
+
+    /** Add the pages around the current page to the array */
+    if ( $paged >= 3 ) {
+        $links[] = $paged - 1;
+        $links[] = $paged - 2;
+    }
+
+    if ( ( $paged + 2 ) <= $max ) {
+        $links[] = $paged + 2;
+        $links[] = $paged + 1;
+    }
+
+    echo '<div class="navigation"><ul>' . "\n";
+
+    /** Link to first page, plus ellipses if necessary */
+    if ( ! in_array( 1, $links ) ) {
+        $class = 1 == $paged ? ' class="active"' : '';
+
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+
+        if ( ! in_array( 2, $links ) )
+            echo '<li>…</li>';
+    }
+
+    /** Link to current page, plus 2 pages in either direction if necessary */
+    sort( $links );
+    foreach ( (array) $links as $link ) {
+        $class = $paged == $link ? ' class="active"' : '';
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+    }
+
+    /** Link to last page, plus ellipses if necessary */
+    if ( ! in_array( $max, $links ) ) {
+        if ( ! in_array( $max - 1, $links ) )
+            echo '<li>…</li>' . "\n";
+
+        $class = $paged == $max ? ' class="active"' : '';
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+    }
+
+    echo '</ul></div>' . "\n";
+
 }
 
 ?>
