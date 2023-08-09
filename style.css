@@ -729,6 +729,11 @@ header{
     background: linear-gradient(45deg, #9b35fa, #60afff);
     color: #fff;
     font-size: 13px;
+    float: left;
+    margin-top: 13px;
+}
+.title-author a{
+  display: inline-block;
 }
 .home-brand-title{
   margin-top: 10px;
@@ -952,7 +957,7 @@ aside img{
 .meta-info{
   margin-top: 20px;
 }
-.comment::before{
+.comment-site::before{
   content: "";
   background: url(assets/img/icons8-comment-25.png);
   background-repeat: no-repeat;
@@ -1034,6 +1039,7 @@ aside img{
 }
 .archive-content .navigation{
   text-align: center;
+  direction: ltr;
 }
 .archive-content .navigation ul{
   background: #fff;
@@ -1061,6 +1067,7 @@ aside img{
 .archive-item img{
   max-width: 190px;
   height: 200px;
+  border-radius: 8px;
 }
 .archive-title{
   color: #3f3d3d;
@@ -1119,4 +1126,104 @@ aside img{
   margin-left: -22px;
   margin-top: 5px;
   border-right-color: #fff ;
+}
+.site-comments{
+  margin-top: 20px;
+  font-family: 'kalamehweb' !important;
+}
+.comment-reply-title{
+  font-weight: bold;
+  font-size: 20px;
+  color: #404040;
+  font-family: 'kalamehweb' !important;
+  margin-top: 20px;
+}
+.comment-form-comment label{
+  display: inline-block;
+  font-family: 'kalamehweb' !important;
+}
+.comment-form-comment textarea{
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  outline: none;
+  background: beige;
+  font-family: 'kalamehweb' !important;
+}
+.site-comments input{
+  padding: 7px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  max-width: 100%;
+  display: block;
+  font-family: 'kalamehweb' !important;
+}
+.comment-form-cookies-consent input{
+  display: inline-block;
+  width: 2%;
+  font-family: 'kalamehweb' !important;
+}
+.comment-form-author, .comment-form-email{
+  display: inline-block;
+  width: 49%;
+}
+.comment-form-url{
+  display: none;
+}
+.site-comments input.submit{
+  background: linear-gradient(45deg,#005ef6, #00aeff) ;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  font-family: 'kalamehweb';
+  border: none;
+}
+.comments-title{
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #5a5a5a;
+}
+.comment-author img{
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.comment-meta a{
+  color: #ce0d0d;
+}
+.comment-meta{
+  display: inline-block;
+  float: left;
+  margin-top: -42px;
+  margin-left: 7px;
+}
+ .comment-body{
+  box-shadow: 0 0 10px #f4f4;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+ .depth-2 .comment-body {
+  background: #efefef;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 18px 10px 0;
+}
+.comment-body p{
+  margin-top: -6px!important;
+}
+.reply{
+  margin: 5px 0;
+}
+.reply a{
+  color: rgb(209, 196, 6);
+  border: 1px solid  rgb(209, 196, 6);
+  border-radius: 5px;
+  padding: 2px 5px;;
+}
+.comment-body cite, .comment-body cite a, .comment-body span{
+  color: #3f3d3d;
 }

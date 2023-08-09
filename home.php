@@ -302,10 +302,13 @@ while ( $the_query->have_posts() ) {
           <div class="article-item">
             <a href="<?php the_permalink(); ?>"
               ><?php the_post_thumbnail(); ?></a>
+              <div class='title-author'>
             <a href="<?php the_permalink(); ?>"
-              ><h3><?php the_title(); ?></h3></a>
-            <span class="publish-data"><?php echo get_the_date('j F Y'); ?></span>
+            ><h3><?php the_title(); ?></h3></a>
             <span class="author"><?php echo get_the_author_posts_link(); ?></span>
+              </div>
+            <span class="publish-data"><?php echo get_the_date('j F Y'); ?></span>
+            <span class="comment-site"><?php echo get_comments_number(); ?></span>
           </div>
   <?php
 }
