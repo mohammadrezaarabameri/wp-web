@@ -221,8 +221,14 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {      
 add_theme_support( 'woocommerce' );};
 
-if (class_exists('Woocommerce')){
-    add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+// change price location in woocommerce
+function change_price_position() {
+    global $product;
+    if($product -> is_type('simple')){
+        remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+        add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 25 );
+    }
 }
+add_action( 'woocommerce_before_single_product', 'change_price_position' );
 
 ?>

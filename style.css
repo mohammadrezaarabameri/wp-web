@@ -1227,3 +1227,34 @@ aside img{
 .comment-body cite, .comment-body cite a, .comment-body span{
   color: #3f3d3d;
 }
+/* woocommerce style */
+.product_title.entry-title{
+  font-size: 22px;
+  font-weight: 700;
+  color: #646464;
+  margin-top: 10px!important;
+  border-bottom: 2px solid #d4d4d4;
+  padding-bottom: 20px!important;
+}
+.woocommerce-product-details__short-description p{
+  line-height: 2!important;
+}
+.woocommerce-Price-amount.amount{
+  color: #fb5e76;
+  margin-left: 15px;
+}
+.price ins{
+  text-decoration: none!important;
+}
+.price del{
+  color: #fb5e76!important;
+}
+.cart button{
+  margin: 10px auto!important;
+  width: 50%;
+  box-shadow: 0 0 20px #41bcff91!important;
+  background: linear-gradient(45deg, #005ef6, #00aeff)!important;
+  border-radius: 8px!important;
+  font-family: 'KalamehWeb';
+  line-height: 1.5!important;
+}
