@@ -209,7 +209,20 @@ function paginationArchive() {
     }
 
     echo '</ul></div>' . "\n";
+};
 
+// support theme with woocommerce
+function wpSuppurtWoocommerce(){
+    add_theme_support('woocoomerce');
+};
+add_action('after_setup_theme', 'wpSuppurtWoocommerce');
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {      
+add_theme_support( 'woocommerce' );};
+
+if (class_exists('Woocommerce')){
+    add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 }
 
 ?>
