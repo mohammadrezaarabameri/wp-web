@@ -230,5 +230,18 @@ function change_price_position() {
     }
 }
 add_action( 'woocommerce_before_single_product', 'change_price_position' );
+// add options for woocommerce
 
+add_theme_support( 'wc-product-gallery-zoom');
+add_theme_support( 'wc-product-gallery-lightbox');
+add_theme_support( 'wc-product-gallery-slider');
+
+// change columns gallery
+add_filter( 'woocommerce_single_product_image_gallery_classes', 'bbloomer_5_columns_product_gallery' );
+
+function bbloomer_5_columns_product_gallery( $wrapper_classes ) {
+   $columns = 3; // change this to 2, 3, 5, etc. Default is 4.
+   $wrapper_classes[2] = 'woocommerce-product-gallery--columns-' . absint( $columns );
+   return $wrapper_classes;
+}
 ?>
