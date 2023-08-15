@@ -1484,15 +1484,46 @@ aside img{
   top: 418px;
 }
 .woocommerce-MyAccount-navigation{
-  width: 20% !important;
+  width: 22% !important;
   float: right;
-  margin-top: 20px;
+  box-shadow: 0 0 10px #b5b4b4a1;
+  border-radius: 0 0 8px 8px;
+  padding-top: 10px;
 }
 .woocommerce-MyAccount-content{
-  width: 80% !important;
+  width: 77% !important;
   float: left;
-  margin-top: 20px;
+  margin-top: -153px;
 }
 .woocommerce-MyAccount-navigation li{
   line-height: 2.5;
+  padding: 0 15px;
+  font-size: 18px !important;
+}
+.woocommerce-MyAccount-navigation ul li a{
+  color: #333333;
+}
+.woocommerce-MyAccount-navigation ul li:hover, .woocommerce-MyAccount-navigation ul li:active{
+  background: linear-gradient(45deg, #05baff, #0574ff);
+    border-radius: 5px;
+}
+.woocommerce-MyAccount-navigation ul li:hover a, .woocommerce-MyAccount-navigation ul li:active a{
+  color: #fff;
+}
+.user-info-myacount{
+  width: 22%;
+  background: linear-gradient(45deg, #05baff, #0574ff);
+  padding: 30px 0;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  box-shadow:0 0 10px rgba(5, 116, 255, 35%);
+  margin-top: 20px;
+  font-size: 20px !important;
+}
+.user-info-myacount img{
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.user-info-name span{
+  color: #fff;
 }

@@ -28,10 +28,10 @@ do_action( 'woocommerce_before_account_navigation' );
 	// var_dump($current_user);
 	echo get_avatar($current_user->ID,80);
 	?>
-</div>
 <div class='user-info-name'>سلام
      <span><?php echo $current_user->display_name;?></span>
 	 عزیز!
+</div>
 </div>
 <nav class="woocommerce-MyAccount-navigation">
 	<ul>

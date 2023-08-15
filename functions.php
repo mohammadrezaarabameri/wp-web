@@ -243,5 +243,43 @@ function bbloomer_5_columns_product_gallery( $wrapper_classes ) {
    $columns = 3; // change this to 2, 3, 5, etc. Default is 4.
    $wrapper_classes[2] = 'woocommerce-product-gallery--columns-' . absint( $columns );
    return $wrapper_classes;
+};
+// 
+// function iconsItemsMyAccount($icons){
+//     $icons = [
+//         'dashboard' => '<i class="icon-dashboard"></i>',
+//         'orders' => '<i class="icon-orders"></i>',
+//         'edit-account' => '<i class="icon-edit-account"></i>',
+//         'customer-logout' => '<i class="icon-customer-logout"></i>',
+//         'downloads' => '<i class="icon-downloads"></i>',
+//         'edit-address' => '<i class="icon-edit-address"></i>'
+//     ];
+//     return $icons;
+// }
+// add_filter('woocommerce_account_menu_items', 'iconsItemsMyAccount');
+// edit my account woocommerce menu title
+function editMyAccount($menu_name){
+    $menu_name['orders'] = 'سفارشات';
+    return $menu_name;
 }
+add_filter('woocommerce_account_menu_items', 'editMyAccount');
+// add custom menu
+function addItemMenuMyAccount($menu_item){
+    $menu_item = array_slice($menu_item,0,5,true) +
+                 array('group-support-site' => 'تیکت پشتیبانی') +
+                 array_slice($menu_item,5,NULL,true);
+    return $menu_item;
+};
+add_filter('woocommerce_account_menu_items','addItemMenuMyAccount',40);
+// 
+function menuAddEndPoint(){
+    add_rewrite_endpoint('group-support-site',EP_PAGES);
+}
+add_action('init','menuAddEndPoint');
+// 
+function contentMyAccountMenu(){
+    // get_current_user_id()
+    echo 'هنوز مطلبی وجود ندارد';
+};
+add_action('woocommerce_account_group-support-site_endpoint','contentMyAccountMenu');
 ?>
