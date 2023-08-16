@@ -194,7 +194,7 @@ header{
     position: absolute;
     top: 50%;
     left: 140px;
-    transform: translateY(-50%);
+    transform: translateY(36%);
     background: linear-gradient(45deg, #05baff, #0574ff);
     text-align: center;
     border-radius: 30px;
@@ -1526,4 +1526,44 @@ aside img{
 }
 .user-info-name span{
   color: #fff;
+}
+.register img{
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.username-login{
+ margin-right: 20px;
+}
+.user-drop{
+  box-shadow: 0 0 10px #b3b1b1;
+  width: 180px;
+  height: 170px; 
+  border-radius: 5px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 57%;
+  left: 138px;
+  transform: translateY(34%);
+  visibility: hidden;
+}
+.user-drop ul li a{
+  display: block;
+  color: #707070;
+  line-height: 2.5;
+  padding: 0 20px;
+}
+.user-drop ul li a:hover{
+  background: linear-gradient(45deg, #05baff, #0574ff);
+  border-radius: 5px;
+  color: #fff;
+}
+.userbox-holder{
+  position: relative;
+}
+.userbox-holder:hover .user-drop{
+  visibility: visible;
 }

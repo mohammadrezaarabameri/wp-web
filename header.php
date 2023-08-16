@@ -12,7 +12,32 @@
     <header>
       <a class="btnsearch" href="#"></a>
       <a class="basket" href="#"></a>
-      <a class="register" href="#">ورود / ثبت نام</a>
+      <?php $account_link = get_permalink(get_option('woocommerce_myaccount_page_id'));
+      global $current_user;
+       ?>
+       <div class='userbox-holder'>
+         <a class="register" href="<?php echo $account_link; ?>"> 
+            <?php if(is_user_logged_in()){
+             echo get_avatar($current_user->ID,30);?>
+             <span class='username-login'><?php echo $current_user->display_name; ?></span>
+             <?php
+         } else{?>
+         ورود / ثبت نام 
+         <?php } ?>
+       </a>
+       <?php if(is_user_logged_in()){ ?>
+       <div class ='user-drop'>
+         <ul>
+           <li>
+             <a href='<?php echo $account_link; ?>'>داشبوردکاربری</a>
+             <a href='<?php echo wc_get_page_permalink('myaccuont') ?>/orders'>سفارش ها</a>
+             <a href='<?php echo wc_get_page_permalink('myaccuont') ?>/edit-account'>ویرایش حساب</a>
+             <a href='<?php echo wc_logout_url() ?>'>خروج</a>
+           </li>
+         </ul>
+       </div>
+       <?php } ?>
+       </div>
       <nav class="main-menu">
  <?php wp_nav_menu( array(
    'theme_location' => 'header-menu',
