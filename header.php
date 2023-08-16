@@ -4,6 +4,7 @@
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/all.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/swiper-bundle.min.css" />
     <script src="<?php bloginfo('template_url'); ?>/assets/js/swiper-bundle.min.js" type="text-javascript"></script>
     <?php wp_head(); ?>
@@ -29,10 +30,18 @@
        <div class ='user-drop'>
          <ul>
            <li>
-             <a href='<?php echo $account_link; ?>'>داشبوردکاربری</a>
-             <a href='<?php echo wc_get_page_permalink('myaccuont') ?>/orders'>سفارش ها</a>
-             <a href='<?php echo wc_get_page_permalink('myaccuont') ?>/edit-account'>ویرایش حساب</a>
-             <a href='<?php echo wc_logout_url() ?>'>خروج</a>
+             <a href='<?php echo $account_link; ?>'>
+             <i class="fa-solid fa-gauge-simple-high"></i>
+             داشبوردکاربری</a>
+             <a href='<?php echo wc_get_page_permalink('myaccount') ?>orders/'>
+             <i class="fa-solid fa-folder-plus"></i>
+             سفارش ها</a>
+             <a href='<?php echo wc_get_page_permalink('myaccount') ?>edit-account/'>
+             <i class="fa-solid fa-user-pen"></i>
+             ویرایش حساب</a>
+             <a href='<?php echo wc_logout_url() ?>'>
+             <i class="fa-solid fa-square-arrow-up-right"></i>
+             خروج</a>
            </li>
          </ul>
        </div>

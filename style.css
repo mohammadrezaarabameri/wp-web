@@ -1547,14 +1547,18 @@ aside img{
   position: absolute;
   top: 57%;
   left: 138px;
-  transform: translateY(34%);
+  transform: translateY(36%);
   visibility: hidden;
 }
 .user-drop ul li a{
   display: block;
   color: #707070;
   line-height: 2.5;
-  padding: 0 20px;
+  padding: 0 3px 0 20px;
+}
+.user-drop ul li i{
+  display: inline-block;
+  padding-right: 5px;
 }
 .user-drop ul li a:hover{
   background: linear-gradient(45deg, #05baff, #0574ff);
@@ -1566,4 +1570,49 @@ aside img{
 }
 .userbox-holder:hover .user-drop{
   visibility: visible;
+}
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--dashboard::before{
+  content: '\f62a';
+  font: var(--fa-font-solid);
+  color: #818181;
+  margin-left: 5px;
+}
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--orders::before{
+  content: '\f65e';
+  font: var(--fa-font-solid);
+  color: #818181;
+  margin-left: 5px;
+}
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads::before{
+  content: '\f358';
+  font: var(--fa-font-solid);
+  color: #818181;
+  margin-left: 5px;
+}
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-address::before{
+  content: '\f3c5';
+  font: var(--fa-font-solid);
+  color: #818181;
+  margin-left: 5px;
+}
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-account::before{
+  content: '\f2bb';
+  font: var(--fa-font-solid);
+  color: #818181;
+  margin-left: 5px;
+}
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--group-support-site::before{
+  content: '\f590';
+  font: var(--fa-font-solid);
+  color: #818181;
+  margin-left: 5px;
+}
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout::before{
+  content: '\f2f5';
+  font: var(--fa-font-solid);
+  color: #818181;
+  margin-left: 5px;
+}
+.woocommerce-MyAccount-navigation ul li:hover::before{
+  color: #fff;
 }
