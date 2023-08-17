@@ -12,10 +12,20 @@
   <body>
     <header>
       <a class="btnsearch" href="#"></a>
-      <a class="basket" href="#"></a>
+      <div class='basket-cart-content'>
+      <a class="basket" href="<?php echo wc_get_cart_url(); ?>">
+      <?php if((wc()->cart->get_cart_contents_count())){ ?>
+        <span class='cart-number'><?php echo wc()->cart->get_cart_contents_count(); ?></span>
+      <?php } ?>
+      </a>
+      <div class='widget woocommerce widget_shopping_cart'>
+        <?php woocommerce_mini_cart(); ?>
+      <div class='widget_shopping_cart_content'></div>
+      </div>
       <?php $account_link = get_permalink(get_option('woocommerce_myaccount_page_id'));
       global $current_user;
        ?>
+       </div>
        <div class='userbox-holder'>
          <a class="register" href="<?php echo $account_link; ?>"> 
             <?php if(is_user_logged_in()){

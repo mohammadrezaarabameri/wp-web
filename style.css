@@ -1549,6 +1549,7 @@ aside img{
   left: 138px;
   transform: translateY(36%);
   visibility: hidden;
+  z-index: 999;
 }
 .user-drop ul li a{
   display: block;
@@ -1615,4 +1616,30 @@ aside img{
 }
 .woocommerce-MyAccount-navigation ul li:hover::before{
   color: #fff;
+}
+.cart-number{
+  box-shadow: 0 0 10px #d9d8d8;
+  border-radius: 100%;
+  padding: 5px;
+  background: red;
+  color: #fff;
+  margin-top: -3px;
+  display: inline-block;
+  margin-right: -2px;
+  font-size: 13px;
+}
+.basket-cart-content:hover .widget.woocommerce.widget_shopping_cart{
+  z-index: 999;
+  position: absolute;
+  top: 82%;
+  left: -43px;
+  box-shadow: 0 0 10px #b3b1b1;
+  background: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  line-height: 1.8;
+display: unset;
+}
+.widget.woocommerce.widget_shopping_cart{
+display: none;
 }
